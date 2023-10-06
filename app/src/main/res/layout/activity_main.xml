@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/grop"
+
+    android:padding="30dp"
+    tools:context=".LoginActivity"
+
+    >
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        app:cardBackgroundColor="@color/kerima"
+        app:cardCornerRadius="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="30dp">
+
+            <ImageView
+                android:layout_width="110dp"
+                android:layout_height="90dp"
+                android:layout_marginStart="100dp"
+                android:src="@drawable/kafein"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:backgroundTint="@color/black"
+                android:text="LOGIN"
+                android:fontFamily="@font/extrabold"
+                android:textAlignment="center"
+                android:textColor="@color/brown"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+                android:fontFamily="@font/semibold"
+                android:textColorHint="@color/brown"
+                android:inputType="textEmailAddress" />
+
+            <EditText
+                android:id="@+id/editPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                android:fontFamily="@font/semibold"
+                android:textColorHint="@color/brown"
+                android:inputType="textPassword" />
+
+            <TextView
+                android:id="@+id/forgot_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="@color/black"
+                android:text="Forgot Password?"
+                android:fontFamily="@font/semibold"
+                android:textAlignment="textEnd" />
+
+            <Button
+                android:id="@+id/btn_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="@color/brown"
+                android:text="LOGIN"
+                android:textColor="@color/kerim"
+                android:fontFamily="@font/semibold"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="@color/black"
+                android:text="New User?"
+                android:fontFamily="@font/regular"
+                android:textColor="@color/brown"
+                android:textAlignment="center" />
+
+            <Button
+                android:id="@+id/btn_toregister"
+                android:layout_width="122dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="80dp"
+                android:layout_marginTop="5dp"
+                android:backgroundTint="@color/kerim"
+                android:textColor="@color/brown"
+                android:text="REGISTER"
+                android:fontFamily="@font/semibold"/>
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

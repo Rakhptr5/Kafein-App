@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/kerimb"
+    tools:context=".ManagerDetailTransaksi">
+
+    <RelativeLayout
+        android:id="@+id/relative"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/brown">
+
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:id="@+id/Textwoiw"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="DATA DETAIL TRANSAKSI"
+        android:fontFamily="@font/bold"
+        android:textColor="@color/brown"
+        android:textSize="25dp"
+        android:textAlignment="center"
+        />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Textwoiw"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="16dp"/>
+
+    <TextView
+        android:id="@+id/total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total: Rp.99999999"
+        android:fontFamily="@font/semibold"
+        android:layout_below="@id/recyclerDetail"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/green"
+        android:textSize="25sp"
+        android:layout_marginLeft="16dp"/>
+
+</RelativeLayout>
